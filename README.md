@@ -4,7 +4,7 @@ Submitted by: **Your Name**
 
 **BitFit** is an app that allows users to track daily wellness entries such as calories, meals, and notes.
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
