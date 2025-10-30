@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    // KSP for Room (matches Kotlin 2.0.10; if your Kotlin is different, change version accordingly)
+    // KSP version should match your Kotlin. this line matches Kotlin 2.0.10
     id("com.google.devtools.ksp") version "2.0.10-1.0.24"
 }
 
@@ -13,8 +13,8 @@ android {
         applicationId = "com.example.bitfit"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
     }
 
     buildTypes {
@@ -27,20 +27,17 @@ android {
         }
     }
 
-    // JVM alignment to kill toolchain mismatches
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions { jvmTarget = "17" }
-    // optional:
-    // kotlin { jvmToolchain(17) }
 
     buildFeatures { viewBinding = true }
 }
 
 dependencies {
-    // AndroidX + UI
+    // AndroidX UI
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
@@ -53,10 +50,16 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.6")
 
-    // Room (KSP)
+    // Room with KSP
     implementation("androidx.room:room-ktx:2.6.1")
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     ksp("androidx.room:room-compiler:2.6.1")
 
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+
+    // Navigation Component
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
 }
