@@ -28,10 +28,11 @@ The following **optional** features are implemented:
 
 ## 🎥 Video Walkthrough
 
-Here's a walkthrough of implemented features:
+Here’s a walkthrough of implemented features:
 
-<video src="https://github.com/Ade2396/BitFit
-/raw/main/walkthrough.webm" width="350" controls></video>
+<video src="https://github.com/Ade2396/BitFit/raw/main/walkthru.mp4" width="350" controls></video>
+
+
 
 ---
 
