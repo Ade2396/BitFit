@@ -28,9 +28,10 @@ The following **optional** features are implemented:
 
 ## 🎥 Video Walkthrough
 
-Here’s a walkthrough of implemented features:
+<video src="https://github.com/Ade2396/BitFit/raw/main/bitfit_part2.mp4" width="360" controls></video>
 
-<video src="https://github.com/Ade2396/BitFit/raw/main/walkthru.mp4" width="350" controls></video>
+If the embed doesn’t load in your browser, use the direct link:
+https://github.com/Ade2396/BitFit/raw/main/bitfit_part2.mp4
 
 
 
